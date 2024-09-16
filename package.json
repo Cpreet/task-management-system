@@ -1,0 +1,8 @@
+{
+  "name": "task-management-system",
+  "private": true,
+  "module": "index.ts",
+  "workspaces": [
+    "apps/*"
+  ]
+}
