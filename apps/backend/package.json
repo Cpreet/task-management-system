@@ -10,7 +10,9 @@
     "@types/jsonwebtoken": "^9.0.7"
   },
   "scripts": {
-    "start:dev": "bun --watch ./index.ts"
+    "start:dev": "bun --watch ./index.ts",
+    "build": "bun build --target=bun --outdir=dist --outfile=index.js index.ts",
+    "preview": "bun run build; bun ./dist/index.js"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

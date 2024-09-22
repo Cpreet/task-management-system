@@ -177,3 +177,6 @@ dist
 # Local
 secrets
 secrets/**/*.*
+dist
+dist/**/*.*
+dist.*
