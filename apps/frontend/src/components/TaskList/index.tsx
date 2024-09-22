@@ -11,7 +11,7 @@ import Task from "./Task";
 import AddTask from "./AddTask";
 import Logo from "../Logo";
 
-import { TTaskPutRequest, TTaskPutResponse, type TTask, type TTaskGetListResponse, type TTaskPostRequest, type TTaskPostResponse } from "@/types";
+import type { TTaskPutRequest, TTaskPutResponse, TTask, TTaskGetListResponse, TTaskPostRequest } from "@/types";
 import { api } from "../AxisoInstance";
 import { ThumbsUp } from "lucide-react";
 import { Button } from "../ui/button";

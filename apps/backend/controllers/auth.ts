@@ -9,8 +9,8 @@ import type { TUserPostRequest } from '../types';
 
 const router = Router();
 
-const JWT_SECRET = "aV3ry$3cyore70k3m";
-const JWT_EXPIRESIN = 43200000;
+const JWT_SECRET = Bun.env.JWT_SECRET || "aV3ry$3cyore70k3m";
+const JWT_EXPIRESIN = Number(Bun.env.JWT_EXPIRESIN) || 43200000;
 
 const generateToken = (creds: { id: ObjectId | undefined }) => {
   if (!creds.id) return;

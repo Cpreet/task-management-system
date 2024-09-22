@@ -1,0 +1,5 @@
+NODE_ENV=local
+PORT=3000
+HOST_IP="192.168.29.69"
+ORIGINS=`http://localhost:5173,http://192.168.29.69:5173,http://localhost:$PORT,http://192.168.29.69:$PORT`
+

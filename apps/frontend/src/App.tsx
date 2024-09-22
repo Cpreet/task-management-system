@@ -32,7 +32,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <ThemeProvider defaultTheme='light' storageKey='ui-theme'>
+    <ThemeProvider defaultTheme='dark' storageKey='ui-theme'>
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
       </QueryClientProvider>

@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import type { RequestHandler } from "express";
 
-const JWT_SECRET = "aV3ry$3cyore70k3m";
+const JWT_SECRET = Bun.env.JWT_SECRET ||"aV3ry$3cyore70k3m";
 
 const authMiddleware: RequestHandler = (req, res, next) => {
   try {
